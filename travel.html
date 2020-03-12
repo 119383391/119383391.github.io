@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Interests</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+        font-family: Arial, Helvetica, sans-serif;
+        margin: 0;
+}
+
+
+.header {
+        padding: 50px;
+        text-align: center;
+        background: #B49977;
+        color: white;
+}
+
+.header h1 {
+        font-size: 40px;
+}
+
+
+.navbar {
+         overflow: hidden;
+         background-color: #C3AF91;
+}
+
+
+
+
+.navbar a {
+         float: left;
+         display: block;
+         color: white;
+         text-align: center;
+         padding: 14px 20px;
+         text-decoration: none;
+  
+ 
+.footer {
+         padding: 20px;
+         text-align: center;
+         background: #B49977;
+  }
+}
+}
+</style>
+
+
+
+
+
+<link href="http://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+<style type="text/css">
+#container {
+          overflow: hidden;
+          width: 800px;
+          height: 230px;
+          margin: 0 auto;
+          cursor: pointer;
+          margin-top:150px;
+}
+
+#imgs {
+          display: block;
+          padding: 0;
+          width: 200%;
+}
+
+#imgs li {
+         padding-right: 10px;
+         display: inline-block;
+        *display:inline;
+}
+
+#imgs img {
+         width: 160px;
+         height: 120px;
+}
+
+.title {
+         display: block;
+         width: 100%;
+         height: 38px;
+         line-height: 38px;
+         color: white;
+         font-weight: bold;
+         text-align: center;
+         background: #DFCFBE;
+}
+
+</style>
+
+
+
+
+
+
+
+ 
+<style>
+h2 { 
+         text-align: center;
+   }
+h3 { 
+         text-align: center;
+	 }
+h3.serif {
+        font-family:""Times New Roman", Times, serif;
+}
+</style>
+</head>
+
+
+
+
+
+<body>
+
+<div class="header">
+  <h1>My Interests - Travel </h1>
+  <h2>Consulting Help Ltd </h2>
+</div> 
+
+<div class="navbar">
+  <a href="index.html">Home</a>
+   <a href="CVitae.html">Curriculum Vitae </a>
+      <a href="Consulting.html">Consulting</a>
+</div>
+
+<div class="navbar">
+  <a href="sports.html">Sports</a>
+  <a href="travel.html">Travel</a> 
+</div>
+
+
+
+
+
+
+
+
+<div class = "column middle">
+<h2> Travel </h2>
+<h3> I love to travel Ive been to man places all over the world including australia, Ios, Paris, New York, London, Spain and Austria.I love to see different places.I went skiing in Austria for 2 weeks last year and absouluty loved it!
+ We flew into Munich and styaed there for a night and just went walking through the city,we then got the bus to our accommadation in Austria.We went skiing for two weeks straight then.I've been to Australia to visit my brother
+ when he was living in Sydney and we travelled to Brisbane and melbourne in the two weeks.
+I regularly travel to London because my grandmother is from there orginally and my mum has an apartment over there now. My favourite city that i have visited is Paris because of the architecture and the shopping. 
+Also i go to Marbella, Spain every year with my family during the month of July for two weeks. We go surfing, jet skiing and on boat trips durning these weeks.
+</div>
+
+
+
+
+
+
+
+<div class="container">
+ <span class="title">Travel</span>
+  <ul id="imgs">
+    <li><img src="https://www.greektravel.com/greekislands/ios/ios-greece01.jpg" alt="" /></li>
+    <li><img src="https://www.telegraph.co.uk/content/dam/Travel/Destinations/Europe/Spain/Malaga/malaga-spain-lead-guide.jpg" alt="" /></li>
+    <li><img src="https://cnd0.skisolutions.com/uploads/image/photo/41568/Austria-Skiing-Box.jpg" alt="" /></li>
+    <li><img src="https://lp-cms-production.imgix.net/2019-06/55425108.jpg?fit=crop&q=40&sharp=10&vib=20&auto=format&ixlib=react-8.6.4" alt="" /></li>
+    <li><img src="https://i.insider.com/5d0150e06fc9200b5a05f042?width=1100&format=jpeg&auto=webp" alt="" /></li>
+    <li><img src="https://lp-cms-production.imgix.net/2019-06/65830387.jpg?fit=crop&q=40&sharp=10&vib=20&auto=format&ixlib=react-8.6.4" alt="" /></li>
+    <li><img src="https://lp-cms-production.imgix.net/features/2016/04/Santorini-53c9e0dca77b.jpg" alt="" /></li>
+  </ul>
+  <span class="title"></span> </div>
+<div id="controler"> </div>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.3.min.js"></script> 
+<script type="text/javascript" src="lib/ImageScroll.js"></script> 
+<script type="text/javascript">
+
+  $('#imgs').imageScroll({
+    orientation:"left",
+    speed:600,
+    interval:1000,
+    hoverPause:true,
+    callback:function(){
+      var ordinal = $(this).find("img").first().attr("src");
+      <!-- console.log(ordinal); -->
+      $(this).next("span").text("CallbackDisplay: hidden "+ordinal+"!");
+    }
+  });
+
+  </script><script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-36251023-1']);
+  _gaq.push(['_setDomainName', 'jqueryscript.net']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</div>
+
+
+</body>
+</html>
